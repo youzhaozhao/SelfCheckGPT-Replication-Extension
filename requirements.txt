@@ -1,0 +1,200 @@
+absl-py==2.2.0
+accelerate==1.0.1
+aiofiles==23.2.1
+aiohappyeyeballs==2.6.1
+aiohttp==3.11.14
+aiosignal==1.3.2
+annotated-types==0.7.0
+anyio==4.9.0
+apex @ file:///mnt/wheel/apex-0.1%2Bmetax2.31.0.4-cp310-cp310-linux_x86_64.whl#sha256=accd52473c1fedd195963b746981d6974753cdba72f60ae7f96f49682ce79502
+archspec @ file:///home/conda/feedstock_root/build_artifacts/archspec_1737352602016/work
+async-timeout==5.0.1
+attrs==25.3.0
+av==14.2.0
+backports.cached-property==1.0.2
+bert-score==0.3.13
+bitsandbytes @ file:///mnt/wheel/bitsandbytes-0.44.0%2Bmaca2.31.0.3-cp310-cp310-linux_x86_64.whl#sha256=c913cd96a438dde2d98c1d0dfadb0a698c39ae5ae6b1fa807315777120dc251f
+blessings==1.7
+blis==1.3.3
+boltons @ file:///home/conda/feedstock_root/build_artifacts/boltons_1733827268945/work
+Brotli @ file:///home/conda/feedstock_root/build_artifacts/brotli-split_1725267488082/work
+cachetools==5.5.2
+catalogue==2.0.10
+certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1739515848642/work/certifi
+cffi @ file:///home/conda/feedstock_root/build_artifacts/cffi_1725560520483/work
+chardet==5.2.0
+charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1735929714516/work
+click==8.1.8
+cloudpathlib==0.23.0
+codecov==2.1.13
+colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1733218098505/work
+coloredlogs==15.0.1
+colour-runner==0.1.1
+conda @ file:///home/conda/feedstock_root/build_artifacts/conda_1739917016554/work
+conda-libmamba-solver @ file:///home/conda/feedstock_root/build_artifacts/conda-libmamba-solver_1737800978214/work/src
+conda-package-handling @ file:///home/conda/feedstock_root/build_artifacts/conda-package-handling_1736345463896/work
+conda_package_streaming @ file:///home/conda/feedstock_root/build_artifacts/conda-package-streaming_1729004031731/work
+confection==0.1.5
+contourpy==1.3.1
+coverage==7.7.0
+cycler==0.12.1
+cymem==2.0.13
+datasets==3.1.0
+deepdiff==8.4.2
+deepspeed @ file:///mnt/wheel/deepspeed-0.15.1%2Bf0c2dd0d-py3-none-any.whl#sha256=29031d184bcfc070d7096de1a4ffe8a9ff8cc832553c8993d91c62ac5a5c53e9
+dill==0.3.8
+distlib==0.3.9
+distro @ file:///home/conda/feedstock_root/build_artifacts/distro_1734729835256/work
+docstring_parser==0.16
+dropout_layer_norm @ file:///mnt/wheel/dropout_layer_norm-0.1%2Bmetax2.31.0.4torch2.4-cp310-cp310-linux_x86_64.whl#sha256=1dcd31c5146f2761917fe8fd2c5d793fb124b8952b32110837ec88d4641e704c
+einops==0.8.1
+exceptiongroup==1.2.2
+fastapi==0.115.11
+ffmpy==0.5.0
+filelock==3.18.0
+fire==0.7.0
+flash_attn @ file:///mnt/wheel/flash_attn-2.6.3%2Bmetax2.31.0.4torch2.4-cp310-cp310-linux_x86_64.whl#sha256=4a4d1a2e214831b52b62847edd62e6f0458e5bad0365bf10ab80c0bb35f14712
+flashinfer @ file:///mnt/wheel/flashinfer-0.2.1.post2%2Bmetax2.31.0.4torch2.4-cp310-cp310-linux_x86_64.whl#sha256=90357d166e9082c7103a4013de4ef5614f9fe6a4ab474ba34e75875b49bab29b
+fonttools==4.56.0
+frozendict @ file:///home/conda/feedstock_root/build_artifacts/frozendict_1728841320383/work
+frozenlist==1.5.0
+fsspec==2024.9.0
+ftfy==6.3.1
+fused_dense_lib @ file:///mnt/wheel/fused_dense_lib-2.6.3%2Bmetax2.31.0.4torch2.4-cp310-cp310-linux_x86_64.whl#sha256=99e5f8a37efeb24506803a15fde8b660218f55fd02ea3b9dd053d2cb5813c302
+google-auth==2.38.0
+google-auth-oauthlib==0.4.6
+gradio==4.44.1
+gradio_client==1.3.0
+grpcio==1.71.0
+h11==0.14.0
+h2 @ file:///home/conda/feedstock_root/build_artifacts/h2_1733298745555/work
+hjson==3.1.0
+hpack @ file:///home/conda/feedstock_root/build_artifacts/hpack_1733299205993/work
+httpcore==1.0.7
+httpx==0.28.1
+huggingface-hub==0.29.3
+humanfriendly==10.0
+hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1733298771451/work
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1733211830134/work
+importlib_resources==6.5.2
+iniconfig==2.0.0
+jieba==0.42.1
+Jinja2==3.1.6
+joblib==1.5.2
+jsonpatch @ file:///home/conda/feedstock_root/build_artifacts/jsonpatch_1733814567314/work
+jsonpointer @ file:///home/conda/feedstock_root/build_artifacts/jsonpointer_1725302897999/work
+kiwisolver==1.4.8
+libmambapy @ file:///home/conda/feedstock_root/build_artifacts/mamba-split_1741810387451/work/libmambapy
+liger_kernel @ file:///mnt/wheel/liger_kernel-0.5.3-py3-none-any.whl#sha256=883792804bf9a0a7a8dbefc5072c39a67501c92c8b2fe5ca16eb32b7b2b99a01
+llamafactory @ file:///mnt/wheel/llamafactory-0.9.1.dev0-py3-none-any.whl#sha256=940efa56e5b69f3a5cb86b9a316c680d88f742d7c6bf958e844bf741c9cb4a74
+Markdown==3.7
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.10.1
+mcspconv @ file:///mnt/wheel/mcspconv-2.1.0%2Bmetax2.31.0.4torch2.4-cp310-cp310-linux_x86_64.whl#sha256=a9f652e7060bb79eb41391805346c38b2a5ebca6c80ddc05ffe6cb27a6898535
+mdurl==0.1.2
+menuinst @ file:///home/conda/feedstock_root/build_artifacts/menuinst_1731146967497/work
+mpmath==1.3.0
+multidict==6.2.0
+multiprocess==0.70.16
+murmurhash==1.0.15
+networkx==3.4.2
+ninja==1.11.1.3
+nltk==3.9.2
+numpy==1.26.4
+oauthlib==3.2.2
+orderly-set==5.3.0
+orjson==3.10.15
+packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1733203243479/work
+pandas==2.2.3
+peft==0.12.0
+pillow==10.4.0
+platformdirs @ file:///home/conda/feedstock_root/build_artifacts/platformdirs_1733232627818/work
+pluggy @ file:///home/conda/feedstock_root/build_artifacts/pluggy_1733222765875/work
+preshed==3.0.12
+propcache==0.3.0
+protobuf==3.20.3
+psutil==7.0.0
+py-cpuinfo==9.0.0
+pyarrow==19.0.1
+pyasn1==0.6.1
+pyasn1_modules==0.4.1
+pybind11==2.13.6
+pycosat @ file:///home/conda/feedstock_root/build_artifacts/pycosat_1732588391741/work
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pycparser_1733195786/work
+pydantic==2.10.6
+pydantic_core==2.27.2
+pydub==0.25.1
+Pygments==2.19.1
+pyparsing==3.2.1
+pyproject-api==1.9.0
+PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1733217236728/work
+pytest==8.3.5
+python-dateutil==2.9.0.post0
+python-multipart==0.0.20
+pytz==2025.1
+PyYAML==6.0.2
+regex==2024.11.6
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1733217035951/work
+requests-oauthlib==2.0.0
+rich==13.9.4
+rootpath==0.1.1
+rotary_emb @ file:///mnt/wheel/rotary_emb-0.1%2Bmetax2.31.0.4torch2.4-cp310-cp310-linux_x86_64.whl#sha256=f0b52264b5d2c19d9b640ca88231e767bceaa5308a1acfb264a9fee9a0de2c0e
+rsa==4.9
+ruamel.yaml @ file:///home/conda/feedstock_root/build_artifacts/ruamel.yaml_1736248022260/work
+ruamel.yaml.clib @ file:///home/conda/feedstock_root/build_artifacts/ruamel.yaml.clib_1728724455198/work
+ruff==0.11.2
+safetensors==0.5.3
+scikit-learn==1.7.2
+scipy==1.15.2
+semantic-version==2.10.0
+sentencepiece==0.2.0
+shellingham==1.5.4
+shtab==1.7.1
+six==1.17.0
+smart_open==7.5.0
+sniffio==1.3.1
+spacy==3.8.11
+spacy-legacy==3.0.12
+spacy-loggers==1.0.5
+srsly==2.5.2
+sse-starlette==2.2.1
+starlette==0.46.1
+sympy==1.13.3
+tensorboard==2.11.0
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+termcolor==2.5.0
+thinc==8.3.10
+threadpoolctl==3.6.0
+tiktoken==0.9.0
+tokenizers==0.20.3
+tomli==2.2.1
+tomlkit==0.12.0
+torch @ file:///mnt/wheel/torch-2.4.0%2Bmetax2.31.0.4-cp310-cp310-linux_x86_64.whl#sha256=d683b399ef7c337c747a7e8c8435c6fb0fd3ebb4982200e679f72cc03695bc7a
+torchaudio @ file:///mnt/wheel/torchaudio-2.4.1%2Bmetax2.31.0.4-cp310-cp310-linux_x86_64.whl#sha256=abaff0669e8a972b0f6f1823a42f28c532a11473a1ac9f737c2f0cc55e4c7066
+torchvision @ file:///mnt/wheel/torchvision-0.15.1%2Bmetax2.31.0.4-cp310-cp310-linux_x86_64.whl#sha256=648f3f4517349c515b5f2cfb9d930829b8fbe0bc30ea4075e95c19550c5c6096
+tox==4.24.2
+tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1735661334605/work
+transformers==4.46.3
+triton @ file:///mnt/wheel/triton-3.0.0%2Bmetax2.31.0.4-cp310-cp310-linux_x86_64.whl#sha256=69c24d4f1c82794418aebe9d02ef9cf608f91f1784d8ebfdd9b93ea58a658eb8
+trl==0.9.6
+truststore @ file:///home/conda/feedstock_root/build_artifacts/truststore_1729762363021/work
+typer==0.15.2
+typer-slim==0.20.0
+typing_extensions==4.12.2
+tyro==0.8.14
+tzdata==2025.1
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1734859416348/work
+uvicorn==0.34.0
+virtualenv==20.29.3
+wasabi==1.1.3
+wcwidth==0.2.13
+weasel==0.4.3
+websockets==12.0
+Werkzeug==3.1.3
+wrapt==2.0.1
+xentropy_cuda_lib @ file:///mnt/wheel/xentropy_cuda_lib-0.1%2Bmetax2.31.0.4torch2.4-cp310-cp310-linux_x86_64.whl#sha256=62245585ba9220bb47253ee4719168ff171586c90dbab5593077db27b3ac0bb6
+xxhash==3.5.0
+yarl==1.18.3
+zstandard==0.23.0
