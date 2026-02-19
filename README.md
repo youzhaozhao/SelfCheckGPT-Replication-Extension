@@ -1,4 +1,5 @@
-# SelfCheckGPT Reproduction and Extension
+# Reproducing and Extending SelfCheckGPT
+### Cross-Lingual and Multi-View Hallucination Detection
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python" alt="Python version">
@@ -20,7 +21,7 @@ This project reproduces and extends the EMNLP 2023 paper:
 
 **SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative LLMs**  
 Manakul et al., EMNLP 2023  
-🔗 [https://arxiv.org/abs/2303.08896](https://aclanthology.org/2023.emnlp-main.557/)
+🔗 [https://aclanthology.org/2023.emnlp-main.557/](https://aclanthology.org/2023.emnlp-main.557/)
 
 SelfCheckGPT proposes a sampling-based black-box framework for detecting hallucinations in LLM-generated text without requiring external knowledge bases or additional supervision.
 
@@ -71,7 +72,7 @@ SelfCheckGPT-Replication-Extension/
 
 ### 1. 📊 Full Reproduction of SelfCheckGPT
 
-We replicated all five methods (BERTScore, NLI, MQAG, Ngram, Prompt) on the original WikiBio dataset. Results closely match the original paper, with **NLI and MQAG even outperforming** the reported numbers.
+We replicated all five methods (BERTScore, NLI, MQAG, Ngram, Prompt) on the original WikiBio dataset. Results closely match the original paper, with NLI and MQAG achieving slightly higher scores than those reported in the original paper under our experimental setup.
 
 | Method          | Reproduced (NonFact AUC‑PR) | Original (NonFact AUC‑PR) |
 |-----------------|-----------------------------|---------------------------|
@@ -145,7 +146,7 @@ We designed **L2C** – a Random Forest model that fuses:
 
 > Non‑linear models capture **conditional relevance** – e.g., when Prompt is ambiguous (score ~0.5), Ngram acts as a tie‑breaker.
 
-**Conclusion**: External sampling is irreplaceable, but multi‑view non‑linear fusion delivers the best performance.
+**Conclusion**: Results indicate that external sampling remains the dominant signal, while multi-view non-linear fusion yields additional improvements.
 
 ---
 
@@ -165,8 +166,16 @@ pip install -r requirements.txt
 
 ### Data
 
-The original WikiBio dataset is included in `data/` (courtesy of SelfCheckGPT authors).  
-Chinese translation is provided as `chinese_wikibio.json`.
+The English evaluation data follows the preprocessing described in the original SelfCheckGPT paper.
+
+We use the official WikiBio hallucination benchmark released by the authors:
+
+🔗 https://huggingface.co/datasets/potsawee/wiki_bio_gpt3_hallucination
+
+Please refer to the official repository for dataset details, licensing, and usage terms.
+
+In addition, we construct a translated Chinese version of WikiBio (`chinese_wikibio.json`) for cross-lingual experiments.  
+The Chinese data is generated via automatic translation and is intended solely for research and analysis purposes.
 
 ### Run Experiments
 
@@ -190,17 +199,31 @@ Chinese translation is provided as `chinese_wikibio.json`.
 | L2C (Chinese)            | Random Forest (4 features)           | **0.8206** (avg)| +1.22% over baseline; non‑linear fusion essential |
 
 ---
+## ⚠️ Limitations
+
+- Chinese dataset constructed via automatic translation; may contain noise.
+- L2C evaluated only on WikiBio-style biography generation.
+- White-box uncertainty analysis limited to entropy and perplexity.
+- External sampling cost remains high in practical deployment.
+
+Future work may explore:
+- Multilingual pretrained NLI transfer
+- Calibration-aware uncertainty modeling
+- Retrieval-augmented consistency signals
+---
 
 ## 📖 Citation
 
 If you find this work useful, please cite both our extension and the original SelfCheckGPT paper.
 
 ```bibtex
-@article{yuan2025selfcheckgpt,
-  title={SelfCheckGPT Reproduction and Extension: Cross-Lingual Empirical Research and Multi-Dimensional Feature Fusion for LLM Hallucination Detection},
+@misc{yuan2025selfcheckgpt,
+  title={Reproducing and Extending SelfCheckGPT: Cross-Lingual Analysis and Learning-to-Check},
   author={Yuan, Zhouyan and Huang, Jiarui},
-  year={2025}
+  year={2025},
+  note={Undergraduate research project}
 }
+
 
 @inproceedings{manakul2023selfcheckgpt,
   title={SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models},
