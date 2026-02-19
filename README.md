@@ -112,8 +112,7 @@ We replicated all five methods (BERTScore, NLI, MQAG, Ngram, Prompt) on the orig
 | Ngram           | 0.8562                      | 0.8563                    |
 | Prompt          | 0.9133                      | 0.9342                    |
 
-> *Full details in [`reproduction_experiment.py`](reproduction_experiment.py)*
-
+> *Full implementation details are provided in [`experiments/run_reproduction.py`](experiments/run_reproduction.py)*
 ---
 
 ### 2. 🔗 Ensemble: NLI + Prompt
@@ -207,13 +206,12 @@ The Chinese data is generated via automatic translation and is intended solely f
 
 ### Run Experiments
 
-| Experiment               | Command                                      |
-|--------------------------|----------------------------------------------|
-| Reproduction (full)      | `python reproduction_experiment.py --full`   |
-| Ensemble (NLI+Prompt)    | `python final_fusion_experiment.py`          |
-| Cross‑lingual            | `python cross_lingual_experiment.py`         |
-| L2C Random Forest        | `python comprehensive_analysis.py`           |
-| Internal metrics analysis| `python verify_internal_analysis.py`         |
+| Experiment               | Command                                         |
+| ------------------------ | ----------------------------------------------- |
+| Reproduction (full)      | `python experiments/run_reproduction.py --full` |
+| Ensemble (Fusion)        | `python experiments/run_fusion.py`              |
+| Cross-lingual Evaluation | `python experiments/run_cross_lingual.py`       |
+| Learning-to-Check (L2C)  | `python experiments/run_l2c.py`                 |
 
 ---
 
@@ -271,5 +269,6 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 ---
 
 <p align="center">
-  <i>For more details, please refer to the <a href="paper/final_paper.pdf">full paper</a> in the <code>paper/</code> directory.</i>
+  <i>For more details, please refer to the <a href="SelfCheckGPT_Final_Report.pdf">full paper</a> in the <code>paper/</code> directory.
+
 </p>
