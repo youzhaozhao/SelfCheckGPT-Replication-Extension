@@ -47,23 +47,53 @@ Overall, this project provides a systematic reproduction, analysis, and extensio
 ```bash
 SelfCheckGPT-Replication-Extension/
 │
-├── reproduction_experiment.py          # Run reproduction of all 5 SelfCheckGPT variants
-├── final_fusion_experiment.py           # Ensemble (NLI+Prompt) with grid search
-├── cross_lingual_experiment.py          # Chinese evaluation (Ngram & Prompt)
-├── comprehensive_analysis.py             # L2C framework with Random Forest
-├── verify_internal_analysis.py           # Correlation analysis of internal metrics
+├── README.md
+├── requirements.txt
+├── SelfCheckGPT_Final_Report.pdf
+├── SelfCheckGPT_Midterm_Presentation.pdf
+│
+├── configs/
+│   └── config.py
 │
 ├── data/
-│   ├── reproduction_results.json         # Reproduced scores (English)
-│   └── chinese_wikibio.json               # Chinese translated WikiBio dataset
+│   ├── raw/
+│   │   └── wikibio_gpt3_hallucination.json
+│   └── processed/
+│       └── wikibio_processed_final.json
 │
-├── results/
-│   └── ensemble_analysis.png              # Weight analysis plot
+├── docs/
+│   ├── SelfCheckGPT_Final_Report.pdf
+│   └── SelfCheckGPT_Midterm_Presentation.pdf
 │
-├── paper/
-│   └── final_paper.pdf                     # Full project paper
+├── experiments/
+│   ├── run_reproduction.py        # Reproduce original SelfCheckGPT results
+│   ├── run_cross_lingual.py       # Cross-lingual evaluation (Chinese WikiBio)
+│   ├── run_fusion.py              # Ensemble fusion experiments
+│   └── run_l2c.py                 # Learning-to-Check (L2C) framework
 │
-└── README.md
+├── src/
+│   ├── data/
+│   │   ├── download.py            # Dataset download utilities
+│   │   ├── loader.py              # Data loading functions
+│   │   └── preprocessing.py       # Data preprocessing pipeline
+│   │
+│   └── selfcheckgpt/
+│       ├── modeling_mqag.py
+│       ├── modeling_ngram.py
+│       ├── modeling_selfcheck.py
+│       ├── modeling_selfcheck_apiprompt.py
+│       └── utils.py
+│
+└── results/
+    ├── reproduction/
+    │   ├── reproduction_results_bertscore.json
+    │   ├── reproduction_results_mqag.json
+    │   ├── reproduction_results_ngram.json
+    │   ├── reproduction_results_NLI.json
+    │   └── reproduction_results_prompt.json
+    └── fusion/
+        └── ensemble_analysis.png
+
 ```
 
 ---
@@ -94,8 +124,6 @@ By combining the two best‑performing methods (NLI & Prompt) via **grid‑searc
 - Optimal weight: **80% NLI, 20% Prompt**
 
 This small but significant gain demonstrates that even near‑ceiling performance can be improved through complementary fusion.
-
-![Ensemble Weight Analysis](results/ensemble_analysis.png)
 
 ---
 
