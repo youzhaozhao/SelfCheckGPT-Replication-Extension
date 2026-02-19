@@ -269,6 +269,9 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 ---
 
 <p align="center">
-  <i>For more details, please refer to the <a href="SelfCheckGPT_Final_Report.pdf">full paper</a> in the <code>docs/</code> directory.
-
+  <i>
+    For more details, please refer to the 
+    <a href="docs/SelfCheckGPT_Final_Report.pdf">full paper</a>.
+  </i>
 </p>
+
